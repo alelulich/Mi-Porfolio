@@ -1,7 +1,7 @@
 body{
     margin: 0;
-    background-color: rgb(24, 24, 48);
-    color: darkgrey;
+    background-color: rgb(242, 242, 163);
+    color: rgb(83, 83, 83);
 }
 header{
     box-shadow: 5px 5px 5px #68696c;
@@ -9,14 +9,14 @@ header{
 nav{
     display: flex;
     justify-content: end;
-    background-color:darkslategray
+    background-color:rgb(158,195,180)
 }
 ul{
     list-style: none;
     margin-right: 50px;
 }
 li{
-    background-color: rgb(64, 64, 65);
+    background-color: rgb(215, 215, 219);
     padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
@@ -27,28 +27,47 @@ li{
 }
 .presentacion {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
 }
 .mi-nombre{
     font-family: 'Poppins', sans-serif;
-    font-size: x-large;
+    font-size: 42px;
     color: rgb(89, 150, 150);
 }
 .foto-perfil{
-    padding: 3px;
     width: 150px;
     height: 150px;
     border-radius: 100px;
-    border: 1 solid red;
     overflow: hidden;
 }
 img{
     width: 200px;
-    height: 160px;
+    height: 150px;
+}
+.organizacion-general{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.fa-brands{
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(232, 218, 239);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    align-items:center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 5px;
 }
 article{
-    border: 1px solid black;
-    background-color: beige;
+    background-color: rgb(180, 180, 107);
     border-radius: 10px;
     width: 250px;
     height: 250px;
@@ -56,6 +75,12 @@ article{
     margin: 5px;
 }
 .conocimientos-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

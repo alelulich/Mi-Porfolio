@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: rgb(242, 242, 163);
     color: rgb(83, 83, 83);
+    font-size: 1rem;
 }
 header{
     box-shadow: 5px 5px 5px #68696c;
@@ -21,16 +22,17 @@ li{
     margin: 5px;
     border-radius: 5px;
 }
+
 .botones-nav{
     display: flex;
     margin-right: 20px;
 }
-.presentacion {
+.distribucion-general {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 30px;
     flex-wrap: wrap;
+    padding: 50px;
 }
 .mi-nombre{
     font-family: 'Poppins', sans-serif;
@@ -40,7 +42,7 @@ li{
 .foto-perfil{
     width: 150px;
     height: 150px;
-    border-radius: 100px;
+    border-radius: 20px;
     overflow: hidden;
 }
 img{
@@ -50,23 +52,44 @@ img{
 .organizacion-general{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-}
-.fa-brands{
-    font-size: 40px;
-    text-align: center;
-    background-color: rgb(232, 218, 239);
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    align-items:center;
     justify-content: space-around;
-    padding: 10px;
+}
+p{
+    width: 80%;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
     margin: 5px;
+    text-align: center;
+}
+i{
+    font-size: 40px;
+    padding: 10px;
+}
+.destacado{
+    text-align: center;
+    margin: 10 0;
+}
+.titulo-destacado{
+    font-size: 5rem;
+}
+.container{
+    padding: 20px;
+    width: 80%;
 }
 article{
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgb(180, 180, 107);
     border-radius: 10px;
     width: 250px;
@@ -74,20 +97,14 @@ article{
     padding: 5px;
     margin: 5px;
 }
-.conocimientos-cards{
+.distribucion-contacto{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px;
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-p{
-    width: 80%;
-}
 footer{
     display: flex;
     justify-content: center;

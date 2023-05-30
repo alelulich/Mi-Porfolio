@@ -3,14 +3,18 @@ body{
     background-color: rgb(242, 242, 163);
     color: rgb(83, 83, 83);
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 header{
     box-shadow: 5px 5px 5px #68696c;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
 }
 nav{
     display: flex;
     justify-content: end;
-    background-color:rgb(158,195,180)
+    background-color: rgb(57, 119, 119);
 }
 ul{
     list-style: none;
@@ -48,27 +52,45 @@ color: #68696c;
     color: rgb(89, 150, 150);
 }
 .foto-perfil{
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
+    width: 30%;
+    height: 30%;
+    align-items: left;
+    border-radius: 25px;
     overflow: hidden;
-    padding: 10px;
-    margin: 10px;
+}
+.conteiner-secundario{
+    border: 2 solid grey;
+    margin: 15px;
+    background-color: blue;
 }
 img{
-    width: 200px;
-    height: 150px;
+    width: 70%;
+    height: 70%;
+    padding: 5px;
+}
+.texto-destacado{
+    font-size: 4rem;
+    margin: 10px;
+    padding: 5px;
+    
+}
+.seccion-misconocimientos{
+    background-color: rgb(194, 194, 124)
 }
 .organizacion-general{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-}
-p{
-    width: 80%;
+    justify-content: center;
 }
 
+p{
+    width: 80%;
+    text-align: center;
+}
+/* .alineacion-izq{
+    text-align: left;
+} */
 figure{
     display: flex;
     flex-direction: column;
@@ -82,29 +104,34 @@ figure{
     margin: 5px;
     text-align: center;
 }
+.seccion-cita{
+    background-color: rgb(57, 119, 119);
+    color: antiquewhite;
+}
 i{
     font-size: 40px;
     padding: 10px;
 }
-.destacado{
-    text-align: center;
-    margin: 10 0;
-}
-.titulo-destacado{
-    font-size: 5rem;
-}
+
+
 .container{
     padding: 20px;
     width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
 }
 article{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(180, 180, 107);
     border-radius: 10px;
     width: 250px;
     height: 250px;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
 }
 .distribucion-contacto{

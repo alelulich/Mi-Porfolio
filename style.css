@@ -72,7 +72,6 @@ img{
     font-size: 4rem;
     margin: 10px;
     padding: 5px;
-    
 }
 .seccion-misconocimientos{
     background-color: rgb(194, 194, 124)
@@ -83,14 +82,13 @@ img{
     align-items: center;
     justify-content: center;
 }
-
 p{
     width: 80%;
     text-align: center;
 }
-/* .alineacion-izq{
+.alineacion-izq{
     text-align: left;
-} */
+}
 figure{
     display: flex;
     flex-direction: column;
@@ -104,6 +102,14 @@ figure{
     margin: 5px;
     text-align: center;
 }
+figure:hover{
+    border: 3 solid black;
+    cursor: pointer;
+}
+figure:hover figcaption{
+    color: rgb(57, 119, 119);
+    font-weight: bold;
+}
 .seccion-cita{
     background-color: rgb(57, 119, 119);
     color: antiquewhite;
@@ -112,7 +118,6 @@ i{
     font-size: 40px;
     padding: 10px;
 }
-
 
 .container{
     padding: 20px;
@@ -134,11 +139,26 @@ article{
     padding: 10px;
     margin: 5px;
 }
-.distribucion-contacto{
+
+article:hover {
+    border: 2 solid darkmagenta;
+    cursor: pointer;
+}
+
+article:hover h3{
+    color: rgb(242, 242, 163);
+}
+.container-contacto{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    width: 50%;
+    justify-content: center;
+    width: 70%;
+    margin: 10px;
+}
+input{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px 10px;
     margin: 10px;
 }
 

@@ -130,17 +130,33 @@
         </Section>
         <section class="distribucion-general" id="contacto">
             <div class="distribucion-contacto">
-                <h2>Contactame</h2>
-                <p>
+                <h2 class="alineacion-izq">Contactame</h2>
+                <p class="alineacion-izq">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsam voluptas eveniet, minima a harum alias blanditiis magni, neque necessitatibus inventore optio dignissimos error minus incidunt iure. Sunt, animi? Magnam, dolorum corrupti. Quos sit nulla sint ea iusto quo, possimus, nesciunt labore ducimus accusantium dolores. Explicabo tempore blanditiis aspernatur officiis.
                 </p>
-
             </div>
-            <div class="distribuvion-contacto">
+            <div>
                 <h2>Escribime</h2>
             <form id="form-contacto">
-                <label for="nombre">Nombre: </label>
-                <input id="nombre" type="text">
+                <div>
+                   <div>
+                    <label for="nombre">Nombre *: </label>
+                <input id="nombre" type="text" placeholder="por ej. Ada">
+                   </div> 
+                   <div>
+                    <label for="apellido">Apellido *: </label>
+                <input id="apellido" type="text" placeholder="por ej. Lovelace">
+                   </div>
+                </div>
+                <div>
+                    <label for="email">Email*: </label>
+                <input id="email" type="email" placeholder="por ej. ada.lovelace@gmail.com">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje *:</label>
+                <input id="mensaje" type="text" placeholder="escribe aquí tu mensaje">
+                </div>
+                
            
             </form>    
             </div>

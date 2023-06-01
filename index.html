@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/de304c45f9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -33,6 +33,7 @@
         </nav>
     </header>
     <main>
+        <!-- seccion presentacion -->
         <section class="distribucion-general" id="hola">
             <div>
              <h1>
@@ -43,18 +44,17 @@
            </p> 
            <a href="#proyectos" class="boton-general"> Lo que hago</a>
             </div >
-             <img class="foto-perfil" src="images/foto-perfil.jpeg" alt="foto ale lulich">   
-            
+             <img class="foto-perfil" src="images/foto-perfil.jpeg" alt="foto ale lulich">
         </section>
-
-        <section class="organizacion-general seccion-misconocimientos" id="conocimientos">
-            <h2>
+        <!-- seccion de informacion de conocimientos -->
+        <section class="distribucion-general seccion-misconocimientos " id="conocimientos">
+            <h2 class="container">
              Mis conocimientos   
             </h2>
-            <p>
+            <p class="container">
                 Como Especialista en Gestión del conocimiento me enfoque en asegurar la trazabilidad de la información en los sistemas implementados.
             </p>
-            <div class="distribucion-general">
+            <div class="distribucion-general container">
              <figure>
                 <i class="fa-brands fa-html5"></i> 
                 <figcaption> HTNL5</figcaption>
@@ -81,18 +81,17 @@
               </figure>
              </div>
         </section>
-        <section class="organizacion-general seccion-cita">
-            
+        <section class="seccion-cita">           
                 <p class="texto-destacado">
                     "
                 </p>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus magnam unde eius quibusdam a consectetur odit quisquam maxime harum veritatis ad, eligendi ea blanditiis iste quos alias minus ratione!
                 </p>
-                <h2>Alguien</h2>
-            
+                <h2>Alguien</h2> 
         </section>
-        <Section class="organizacion-general" id="proyectos">
+        <!-- seccion de proyectos realizados -->
+        <section class="distribucion-general" id="proyectos">
             <h2>
                 Mis Proyectos
             </h2>
@@ -127,9 +126,11 @@
                     </article>
                 </div>
           
-        </Section>
-        <section class="distribucion-general" id="contacto">
-            <div class="distribucion-contacto">
+        </section>
+        <!-- seccion para contactarse -->
+        <section  class="distribucion-general" id="contacto" >
+            <div class="distribucion-general container">
+               <div class="organizacion-general">
                 <h2 class="alineacion-izq">Contactame</h2>
                 <p class="alineacion-izq">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsam voluptas eveniet, minima a harum alias blanditiis magni, neque necessitatibus inventore optio dignissimos error minus incidunt iure. Sunt, animi? Magnam, dolorum corrupti. Quos sit nulla sint ea iusto quo, possimus, nesciunt labore ducimus accusantium dolores. Explicabo tempore blanditiis aspernatur officiis.
@@ -138,8 +139,8 @@
             <div>
                 <h2>Escribime</h2>
             <form id="form-contacto">
-                <div>
-                   <div>
+                <div class="distribucion-general">
+                   <div> 
                     <label for="nombre">Nombre *: </label>
                 <input id="nombre" type="text" placeholder="por ej. Ada">
                    </div> 
@@ -155,7 +156,9 @@
                 <div>
                     <label for="mensaje">Mensaje *:</label>
                 <input id="mensaje" type="text" placeholder="escribe aquí tu mensaje">
-                </div>
+                </div> 
+            </div>
+            
                 
            
             </form>    

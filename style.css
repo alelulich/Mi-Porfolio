@@ -28,21 +28,30 @@ a{
     text-decoration: none;
     color: white;
 }
-
+a:hover{
+    color:rgb(242, 242, 163)
+}
 .botones-nav{
     display: flex;
     margin-right: 20px;
 }
 .boton-general{
-background-color: lightgray;
+background-color: rgb(100, 99, 99);
 border-radius: 15px;
-padding: 5px 10px;
-color: #68696c;
+padding: 5px 20px;
+color: #fdfcfc;
+}
+.boton-general:hover{
+    background-color: darkslategray;
+    color: blanchedalmond;
+}
+.boton-general:active{
+    box-shadow: 0px 0px 8px 1px #7e7d7d;
 }
 .distribucion-general {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 50px;
 }
@@ -58,30 +67,26 @@ color: #68696c;
     border-radius: 25px;
     overflow: hidden;
 }
-.conteiner-secundario{
+/* .conteiner-secundario{
     border: 2 solid grey;
     margin: 15px;
     background-color: blue;
-}
+} */
 img{
     width: 70%;
     height: 70%;
     padding: 5px;
 }
-.texto-destacado{
-    font-size: 4rem;
-    margin: 10px;
-    padding: 5px;
-}
+
 .seccion-misconocimientos{
     background-color: rgb(194, 194, 124)
 }
-.organizacion-general{
+/* .organizacion-general{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 p{
     width: 80%;
     text-align: center;
@@ -95,15 +100,15 @@ figure{
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     background-color: white;
     border-radius: 15px;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
 }
 figure:hover{
-    border: 3 solid black;
+    border: 1px solid rgb(57, 119, 119);
     cursor: pointer;
 }
 figure:hover figcaption{
@@ -111,15 +116,22 @@ figure:hover figcaption{
     font-weight: bold;
 }
 .seccion-cita{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(57, 119, 119);
     color: antiquewhite;
+    align-items: center;
+}
+.texto-destacado{
+    font-size: 4rem;
+    margin: 5px;
 }
 i{
-    font-size: 40px;
-    padding: 10px;
+    font-size: 5rem;
+    padding: 5px;
 }
-
 .container{
+    display: flex;
     padding: 20px;
     width: 80%;
     align-items: center;
@@ -141,19 +153,25 @@ article{
 }
 
 article:hover {
-    border: 2 solid darkmagenta;
+    border: 1px solid rgb(57, 119, 119);
     cursor: pointer;
 }
 
 article:hover h3{
     color: rgb(242, 242, 163);
 }
-.container-contacto{
+article:active{
+    box-shadow: 0px 0px 8px 1px #7e7d7d;
+}
+/* .container-contacto{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 70%;
-    margin: 10px;
+} */
+div div{
+    width: 50%;
+    align-items: left;
 }
 input{
     background-color: aliceblue;

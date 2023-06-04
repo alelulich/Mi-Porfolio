@@ -5,43 +5,52 @@ body{
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
 }
+
 header{
     box-shadow: 5px 5px 5px #68696c;
     position: sticky;
     top: 0px;
     z-index: 5;
 }
+
 .header-nav{
     display: flex;
     justify-content: end;
     background-color: rgb(57, 119, 119);
 }
+
 ul{
     list-style: none;
     margin-right: 50px;
 }
+
 .botones-nav li{
     padding: 5px 10px;
     margin: 5px;
 }
+
 a{
     text-decoration: none;
     color: white;
     padding: 5px 20px;
 }
+
 a:hover{
     color:rgb(242, 242, 163)
 }
+
  /* Estilos para enlace activo en el menú, excepto el enlace de contacto */
 ul.botones-nav li:not(.boton-general):active a {
     box-shadow: 0px 0px 8px 1px rgb(242, 242, 163);
     padding: 5px 20px;
     border-radius: 15px;
   }
+
 .botones-nav{
     display: flex;
     margin-right: 20px;
 }
+
 .boton-general{
 background-color: rgb(100, 99, 99);
 border-radius: 15px;
@@ -49,13 +58,21 @@ padding: 5px 20px;
 color: #fdfcfc;
 transition-duration: 0.3s;
 }
+
 .boton-general:hover{
     background-color: darkslategray;
     color: blanchedalmond;
 }
+
 .boton-general:active{
     box-shadow: 0px 0px 8px 1px #7e7d7d;
 }
+
+/* @media (max-width: 900px) {
+    .botones-nav {
+      display: none;
+    } */
+
 .distribucion-general {
     display: flex;
     align-items: center;
@@ -63,11 +80,13 @@ transition-duration: 0.3s;
     flex-wrap: wrap;
     padding: 50px;
 }
+
 .mi-nombre{
     font-family: 'Poppins', sans-serif;
     font-size: 42px;
     color: rgb(89, 150, 150);
 }
+
 .foto-perfil{
     width: 30%;
     height: 30%;
@@ -90,6 +109,7 @@ p{
     width: 80%;
     text-align: center;
 }
+
 .texto-izq{
     text-align: left;
     color: black;
@@ -107,14 +127,17 @@ figure{
     margin: 10px;
     text-align: center;
 }
+
 figure:hover{
     border: 1px solid rgb(57, 119, 119);
     cursor: pointer;
 }
+
 figure:hover figcaption{
     color: rgb(57, 119, 119);
     font-weight: bold;
 }
+
 .seccion-cita{
     display: flex;
     flex-direction: column;
@@ -122,18 +145,22 @@ figure:hover figcaption{
     color: antiquewhite;
     align-items: center;
 }
+
 .texto-destacado{
     font-size: 6rem;
     margin: 5px;
 }
+
 .texto-cita{
     font-size: 1.5rem;
     max-width: 800px;
 }
+
 i{
     font-size: 5rem;
     padding: 5px;
 }
+
 .container{
     display: flex;
     padding: 20px;
@@ -143,6 +170,7 @@ i{
     text-align: center;
     margin: 20px;
 }
+
 article{
     display: flex;
     flex-wrap: wrap;
@@ -200,13 +228,16 @@ article:active{
   span{
     color: #3d3c3c;
   }
+
   .link-contactos:hover {
     color: rgb(57, 115, 129);
     cursor: pointer;
   }
-  span:hover{
+
+  span:hover:not(.mi-nombre){
     color: black;
   }
+
   .link-contactos:active {
     box-shadow: 0px 0px 8px 1px #3d3c3c;
     border-radius: 25px;
@@ -215,7 +246,10 @@ article:active{
   .icono-redes {
     float: left;
     margin-right: 5px;
+    font-size: large;
+    color: rgb(59, 125, 128)
   }
+
   .link-contactos:hover .icono-redes{
     background-color: rgb(114, 111, 111);
     color: white;
@@ -225,18 +259,18 @@ article:active{
     display: flex;
     justify-content: space-between;
   }
-  
+
   .form-group {
     margin-bottom: 10px;
     box-sizing: border-box;
     margin: 15px;
   }
-  
+
   label {
     display: block;
     margin-bottom: 5px;
   }
-  
+
   input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 8px;
@@ -244,28 +278,47 @@ article:active{
     border-radius: 15px;
     margin-bottom: 5px;
     border: 1px solid transparent;
-
   }
+
   input:focus{
     box-shadow: 0px 0px 8px 1px rgb(228, 118, 118);
   }
+
+  textarea:focus{
+    box-shadow: 0px 0px 8px 1px rgb(228, 118, 118);
+  }
+
     input[type="submit"] {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     }
+
      input[type="email"]:valid:not(:placeholder-shown){
     border: green 2px solid;
     }
+
     input[type="text"]:valid:not(:placeholder-shown){
     border: green 2px solid;
     }
+
     textarea:valid:not(:placeholder-shown){
-        border: green 2px solid;
+    border: green 2px solid;
+    }
+
+    input[type="email"]:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+    }
+
+    @media (max-width: 900px) {
+        .container-contacto {
+          flex-direction: column;
         }
-      input[type="email"]:invalid:not(:placeholder-shown) {
-        border: 2px solid red;
+        .contacto-redes {
+            width: 100%;
+        }
       }
+
 footer{
     display: flex;
     flex-direction: column;
@@ -274,13 +327,16 @@ footer{
     padding: 20px;
     background-color: #7e7d7d;
 }
+
 .botones-footer{
     display: flex;  
 }
+
 ul.botones-footer li:active {
     border: 1px solid #fdfcfc;
     border-radius: 15px;
-  }
+}
+
 .redes-estilo {
     color: rgb(44, 44, 44);
     font-size: 20px;
@@ -290,10 +346,12 @@ ul.botones-footer li:active {
     margin: 5px;
     transition-duration: 0.3s;
 }
+
 .redes-estilo:hover{
     background-color: black;
     color: #fdfcfc;
 }
+
 .redes-estilo:active{
     box-shadow: 0px 0px 8px 1px white;
 }

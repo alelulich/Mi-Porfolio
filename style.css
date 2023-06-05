@@ -13,7 +13,7 @@ header{
     z-index: 5;
 }
 
-.header-nav{
+.container-nav{
     display: flex;
     justify-content: end;
     background-color: rgb(57, 119, 119);
@@ -39,7 +39,7 @@ a:hover{
     color:rgb(242, 242, 163)
 }
 
- /* Estilos para enlace activo en el menú, excepto el enlace de contacto */
+ /* Estilos para link nav menos para contacto*/
 ul.botones-nav li:not(.boton-general):active a {
     box-shadow: 0px 0px 8px 1px rgb(242, 242, 163);
     padding: 5px 20px;
@@ -50,7 +50,7 @@ ul.botones-nav li:not(.boton-general):active a {
     display: flex;
     margin-right: 20px;
 }
-
+/* Estilo para botones principales destacados */
 .boton-general{
 background-color: rgb(100, 99, 99);
 border-radius: 15px;
@@ -68,11 +68,23 @@ transition-duration: 0.3s;
     box-shadow: 0px 0px 8px 1px #7e7d7d;
 }
 
-/* @media (max-width: 900px) {
+.fa-bars{
+    display: none;
+    font-size: 2rem;
+    text-align: left;
+    color: transparent;
+  }
+  
+  @media (max-width: 800px) {
     .botones-nav {
-      display: none;
-    } */
-
+      display: none; 
+    }
+    .fa-bars{
+      display: inline-block;
+      color: beige;
+    }
+  }
+/* Estilo para acomodar la info en las secciones */
 .distribucion-general {
     display: flex;
     align-items: center;
@@ -81,15 +93,49 @@ transition-duration: 0.3s;
     padding: 50px;
 }
 
-.mi-nombre{
+.conteiner-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+}
+
+@media (max-width: 930px){
+    .conteiner-presentacion{
+        flex-direction: column;
+    }
+    .presentacion{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .foto-perfil{
+        margin: 20px;
+    }
+}
+
+.mi-nombre {
     font-family: 'Poppins', sans-serif;
     font-size: 42px;
     color: rgb(89, 150, 150);
 }
 
 .foto-perfil{
-    width: 30%;
-    height: 30%;
+    width: 60%;
+    height: 60%;
     align-items: left;
     border-radius: 25px;
     overflow: hidden;
@@ -99,6 +145,7 @@ img{
     width: 70%;
     height: 70%;
     padding: 5px;
+    justify-content: end;
 }
 
 .seccion-misconocimientos{
@@ -202,17 +249,18 @@ article:active{
     width: 90%;
     background-color: rgb(241, 247, 247);
     border-radius: 20px;
+    margin: 10px;
 }
 .contacto-redes{
     display: flex;
     justify-content: left;
     flex-direction: column;
     align-items: start;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     text-align: left;
     width: 50%;
     margin-top: 20px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     padding: 10px;
 }
 
@@ -247,7 +295,8 @@ article:active{
     float: left;
     margin-right: 5px;
     font-size: large;
-    color: rgb(59, 125, 128)
+    color: rgb(59, 125, 128);
+    border-radius: 100%;
   }
 
   .link-contactos:hover .icono-redes{
@@ -281,18 +330,12 @@ article:active{
   }
 
   input:focus{
-    box-shadow: 0px 0px 8px 1px rgb(228, 118, 118);
+    box-shadow: 0px 0px 8px 1px rgb(119, 118, 118);
   }
 
   textarea:focus{
-    box-shadow: 0px 0px 8px 1px rgb(228, 118, 118);
+    box-shadow: 0px 0px 8px 1px rgb(119, 118, 118);
   }
-
-    input[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    }
 
      input[type="email"]:valid:not(:placeholder-shown){
     border: green 2px solid;
@@ -313,8 +356,20 @@ article:active{
     @media (max-width: 900px) {
         .container-contacto {
           flex-direction: column;
+          margin: 10px;
         }
         .contacto-redes {
+            width: 100%;
+        }
+        .container-contacto{
+            width: 100%;
+        }
+      }
+      @media (max-width:495px) {
+        .form-row{
+            flex-direction: column;
+        }
+        input{
             width: 100%;
         }
       }
@@ -336,6 +391,15 @@ ul.botones-footer li:active {
     border: 1px solid #fdfcfc;
     border-radius: 15px;
 }
+@media (max-width:600px){
+  .botones-footer{
+    display: none;
+}  
+.distribucion-general{
+    padding: 10px;
+}
+}
+
 
 .redes-estilo {
     color: rgb(44, 44, 44);

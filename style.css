@@ -57,6 +57,7 @@ border-radius: 15px;
 padding: 5px 20px;
 color: #fdfcfc;
 transition-duration: 0.3s;
+border: 1px solid transparent;
 }
 
 .boton-general:hover{
@@ -302,42 +303,44 @@ article:active{
   .link-contactos:hover .icono-redes{
     background-color: rgb(114, 111, 111);
     color: white;
-  }
+    }
   
   .form-row {
     display: flex;
     justify-content: space-between;
-  }
+    }
 
   .form-group {
     margin-bottom: 10px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 15px;
-  }
+    }
 
-  label {
+    label {
     display: block;
     margin-bottom: 5px;
-  }
+    }
 
-  input[type="text"], input[type="email"], textarea {
+    input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 8px;
     background-color: rgb(185, 185, 185);
     border-radius: 15px;
     margin-bottom: 5px;
     border: 1px solid transparent;
-  }
+    }
 
-  input:focus{
+    input:focus{
+    box-shadow: 0px 0px 8px 2px rgb(119, 118, 118);
+    border: 1px solid transparent;
+    }
+
+    textarea:focus{
     box-shadow: 0px 0px 8px 1px rgb(119, 118, 118);
-  }
+    border: 1px solid transparent;
+    }
 
-  textarea:focus{
-    box-shadow: 0px 0px 8px 1px rgb(119, 118, 118);
-  }
-
-     input[type="email"]:valid:not(:placeholder-shown){
+    input[type="email"]:valid:not(:placeholder-shown){
     border: green 2px solid;
     }
 
@@ -369,9 +372,6 @@ article:active{
         .form-row{
             flex-direction: column;
         }
-        input{
-            width: 100%;
-        }
       }
 
 footer{
@@ -391,7 +391,7 @@ ul.botones-footer li:active {
     border: 1px solid #fdfcfc;
     border-radius: 15px;
 }
-@media (max-width:600px){
+@media (max-width:500px){
   .botones-footer{
     display: none;
 }  

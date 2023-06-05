@@ -257,12 +257,14 @@ article:active{
     justify-content: left;
     flex-direction: column;
     align-items: start;
-    /* flex-wrap: wrap; */
     text-align: left;
     width: 50%;
     margin-top: 20px;
-    /* margin-left: 20px; */
     padding: 10px;
+}
+
+form{
+    width: 80%;
 }
 
 .link-contactos {
@@ -307,13 +309,14 @@ article:active{
   
   .form-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     }
 
   .form-group {
     margin-bottom: 10px;
-    /* box-sizing: border-box; */
-    margin: 15px;
+    justify-content: space-between;
+    width: 45%;
+    padding: 10px;
     }
 
     label {
@@ -368,9 +371,16 @@ article:active{
             width: 100%;
         }
       }
-      @media (max-width:495px) {
+      @media (max-width:600px) {
         .form-row{
             flex-direction: column;
+        }
+        .contacto-redes{
+            width: 90%;
+            align-items: center;
+        }
+        .form-group{
+            width: 100%;
         }
       }
 
